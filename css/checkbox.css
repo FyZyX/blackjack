@@ -1,0 +1,42 @@
+#rules h4, .rule, .rule input[type='checkbox'], .rule input[type='checkbox'] + label {
+    display: inline-block;
+}
+
+#rules h4 {
+    font-size: 16pt;
+    font-weight: normal;
+    margin: 15px 5px 15px 35px;
+}
+
+.rule {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background: #666;
+    border-radius: 40%;
+    position: relative;
+}
+
+.rule input[type='checkbox'] {
+    visibility: hidden;
+}
+
+.rule input[type='checkbox']:disabled + label {
+    opacity: 0.5;
+}
+
+.rule input[type='checkbox']:checked + label {
+    background: #73e600;
+}
+
+.rule label {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #aaaaaa;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #cccccc;
+    border-radius: 50%;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack Basic Strategy Practice</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/button.css">
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <!-- END jQuery -->
+    <script src="js/main.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/createTables.js"></script>
+    <script src="js/Card.js"></script>
+    <script src="js/Hand.js"></script>
+    <script src="js/progressBar.js"></script>
+    <script src="js/decide.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/initializeCheckboxes.js"></script>
+</head>
+<body>
+    <main>
+        <h3 id="response">Take a guess!</h3>
+        <section id="current-hand">
+            <article id="dealer-hand">
+                <h4>Dealer Card</h4>
+                <img class="card" id="dealer-up-card" src="images/playing-cards/png/black_joker.png">
+            </article>
+            <article id="player-hand">
+                <h4>Player Hand</h4>
+                <img class="player card" id="player-card-1" src="images/playing-cards/png/red_joker.png">
+                <img class="player card" id="player-card-2" src="images/playing-cards/png/red_joker.png">
+            </article>
+        </section>
+        <section id="option-buttons">
+            <button id="deal">deal</button>
+            <ul id="option-buttons-list">
+                <li><button class="option" id="hit">hit</button></li>
+                <li><button class="option" id="stand">stand</button></li>
+                <li><button class="option" id="double">double</button></li>
+                <li><button class="option" id="split">split</button></li>
+                <li><button class="option" id="surrender">surrender</button></li>
+            </ul>
+        </section>
+        <section id="rules">
+            <h4>Double Down</h4>
+            <div class="rule">
+                <input id="double-allowed" type="checkbox" checked="checked">
+                <label for="double-allowed"></label>
+            </div>
+            <h4>Double After Split</h4>
+            <div class="rule">
+                <input id="double-after-split" type="checkbox" checked="checked">
+                <label for="double-after-split"></label>
+            </div>
+            <h4>Surrender Permitted</h4>
+            <div class="rule">
+                <input id="surrender-allowed" type="checkbox" checked="checked">
+                <label for="surrender-allowed"></label>
+            </div>
+        </section>
+        <section id="progress">
+            <div class="progress-bar">
+                <label>Overall Mastery</label>
+                <br>
+                <canvas class="progress-bar" id="mastery-progress-bar"></canvas>
+            </div>
+            <div class="progress-bar">
+                <label for="split-hands-progress-bar">Split Hands</label>
+                <br>
+                <canvas class="progress-bar" id="split-hands-progress-bar"></canvas>
+            </div>
+            <div class="progress-bar">
+                <label for="soft-hands-progress-bar">Soft Hands</label>
+                <br>
+                <canvas class="progress-bar" id="soft-hands-progress-bar"></canvas>
+            </div>
+            <div class="progress-bar">
+                <label for="hard-hands-progress-bar">Hard Hands</label>
+                <br>
+                <canvas class="progress-bar" id="hard-hands-progress-bar"></canvas>
+            </div>
+        </section>
+        <button id="reset-stats-btn">reset</button>
+    </main>
+</body>
+</html>

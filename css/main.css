@@ -1,0 +1,70 @@
+* {
+    font-size: 26pt;
+    font-family: "Bookman Old Style", sans-serif;
+    text-align: center;
+}
+
+body {
+    padding: 20px 200px;
+    background: #b3ecff;
+}
+
+main {
+    padding: 8px;
+    background: #006622;
+    background: radial-gradient(ellipse at top, #299a0b 0%, #006622 100%);
+    color: #ccc;
+    border: 5px solid #004d00;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 2px #555555;
+    -moz-box-shadow: 10px 10px 5px 2px #555555;
+    box-shadow: 5px 5px 25px 1px #222;
+}
+
+section#current-hand article {
+    display: inline-block;
+}
+
+article#player-hand {
+    margin-left: 100px;
+}
+
+section#current-hand article h4 {
+    margin: 10px;
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+.card {
+    height: 200px;
+}
+
+.player {
+    display: inline;
+}
+
+.progress-bar {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+.progress-bar label {
+    font-size: 20px;
+}
+
+h3 {
+    font-family: Verdana, sans-serif;
+    color: #ffe680;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+select {
+    vertical-align: middle;
+    background: #737373;
+    color: #ffffcc;
+    font-size: 18px;
+}

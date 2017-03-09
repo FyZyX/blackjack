@@ -1,0 +1,50 @@
+ul#option-buttons-list {
+    list-style: none;
+    margin: 20px 0;
+}
+ul#option-buttons-list li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16pt;
+    text-transform: uppercase;
+    background: #737373;
+    color: #ffffcc;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+button#deal {
+    font-size: 24pt;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+button#reset-stats-btn {
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+button:disabled {
+    color: #999999;
+    opacity: 0.75;
+}
+
+button:hover {
+    background: #b3b3b3;
+}
+
+button:active {
+    border-width: 0;
+    background: #ffffcc;
+    color: #cc0000;
+}
+
+.correct {
+    border: 4px solid hsl(48, 50%, 65%);
+    opacity: 1;
+}
